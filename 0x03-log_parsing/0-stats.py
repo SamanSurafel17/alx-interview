@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Write a script that reads stdin line by line and computes metrics"""
+""" Write a script that reads stdin line by line and computes metrics"""
 
 import sys
 
 
 def printsts(dic, size):
+    """ Log parsing information """
     print("File size: {:d}".format(size))
     for i in sorted(dic.keys()):
         if dic[i] != 0:
